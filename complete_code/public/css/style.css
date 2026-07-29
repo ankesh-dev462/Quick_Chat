@@ -1,0 +1,100 @@
+/* *{
+    color:white;
+    background-color: rgb(8, 3, 3);
+} */
+ .to{
+    
+    /* background-color: rgb(5, 102, 23);*/
+    right: 0px;
+    padding: 4px;
+    border-radius: 5px;
+    margin-left: 50%;
+  box-shadow: 14px 14px 10px rgba(0, 0, 0, 0.3);
+
+
+   
+}
+.from{
+    /* background-color: rgb(28, 26, 26);*/
+      padding: 4px;
+    border-radius: 5px;
+    margin-right: 50%;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+
+
+} 
+
+.chat-cotainer{
+    display:flex;
+    flex-direction:row;
+}
+.chat-cotainer .date{
+    display: flex;
+    text-align: center;
+    font-weight: 100;
+    color: aqua;
+}
+.chat-cotainer .to .edit{
+    text-decoration: none;
+}
+
+.user a{
+    text-decoration: none;
+  color: rgb(47, 63, 208);
+    font-size: 15px;
+    position: relative;
+    left:20%;
+    font-weight: 400;
+}
+.user img{
+    height: 40px;
+    width: 40px;
+    border: 0.5px solid black;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+.user{
+    background-color: rgb(15, 18, 17);
+    color: white;
+    padding-right:40px;
+    border-right:5px dotted rgb(139, 139, 207);
+    
+}
+
+.username img{
+     height: 40px;
+    width: 40px;
+    border: 0.5px solid black;
+    border-radius: 50%;
+    margin: 10px 0 10px 10px;
+}
+
+.input{
+    display:none;
+}
+.edit-form{
+    margin-left: 50%;
+    display: none;
+    
+}
+.user .delete{
+    margin-left:60%;
+}
+.input form{
+    margin-bottom: 50px;
+}
+.inp{
+    cursor: pointer;
+}
+.chat-content{
+ display:none;
+}
+/* .content{
+    display:none;
+} */
+.User_to{
+cursor: pointer;
+font-size:17px;
+font-weight: 800;
+}

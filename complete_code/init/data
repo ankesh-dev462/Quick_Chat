@@ -1,0 +1,364 @@
+let data = [
+  {
+    to: "Amit",
+    img_src: "https://www.gravatar.com/avatar/?d=mp&s=200",
+    to_message: [
+      "Hi Amit! How are you doing today? I hope everything is going well at your side and work is not too stressful.",
+      "Did you reach the office on time this morning or were you delayed because of heavy traffic?",
+      "Have you already had your breakfast or are you planning to eat something later?",
+      "What are you currently working on in your project? Is everything going smoothly?",
+      "Let me know if you are free in the evening, we can talk for a while."
+    ],
+    from_message: [
+      "Hi! I'm doing good, just a bit busy but everything is under control.",
+      "Yes I reached a little late due to traffic but it's okay.",
+      "Yes I had breakfast before leaving home today.",
+      "I'm working on frontend tasks, it's going fine.",
+      "Yes I will be free after 7 PM."
+    ]
+  },
+  {
+    to: "Rahul",
+    img_src: "https://www.gravatar.com/avatar/?d=mp&s=200",
+    to_message: [
+      "Hey Rahul! What are your plans for today, are you working or free?",
+      "Do you want to go out in the evening and chill for some time?",
+      "Have you finished your pending office tasks or still working on them?",
+      "Where are you right now, at home or outside?",
+      "Let me know when you're free so we can plan something."
+    ],
+    from_message: [
+      "Hey! I am partially free today.",
+      "Yes we can meet in the evening.",
+      "Almost done with my work.",
+      "I am at home right now.",
+      "I'll call you once I'm free."
+    ]
+  },
+  {
+    to: "Neha",
+    img_src: "https://www.gravatar.com/avatar/?d=mp&s=200",
+    to_message: [
+      "Good morning Neha! Hope you had a good sleep and feeling fresh today.",
+      "How is your day going so far at the office or college?",
+      "Are you busy today or do you have some free time?",
+      "Shall we plan lunch together sometime this week?",
+      "Take care of yourself and don't stress too much."
+    ],
+    from_message: [
+      "Good morning! Yes I slept well.",
+      "Day is going fine so far.",
+      "A little busy but manageable.",
+      "Yes lunch sounds good.",
+      "Thank you, I will take care."
+    ]
+  },
+  {
+    to: "Aman",
+    img_src: "https://www.gravatar.com/avatar/?d=mp&s=200",
+    to_message: [
+      "Hi Aman, where are you right now? I am waiting for you since long time.",
+      "Please try to come faster because we are getting late.",
+      "Did you leave your place or still getting ready?",
+      "I am waiting near the main gate.",
+      "Let me know when you are nearby."
+    ],
+    from_message: [
+      "Hello! I am on the way.",
+      "Okay I will reach soon.",
+      "Yes I already left.",
+      "I will be there in 5 minutes.",
+      "Reaching soon."
+    ]
+  },
+  {
+    to: "Priya",
+    img_src: "https://www.gravatar.com/avatar/?d=mp&s=200",
+    to_message: [
+      "Hey Priya! Do you want to go for coffee today or tomorrow evening?",
+      "We should catch up after a long time and talk properly.",
+      "What time will you be free today?",
+      "There is a nice café near station we can visit.",
+      "Let me know your plan."
+    ],
+    from_message: [
+      "Hey! Yes coffee sounds great.",
+      "Yes it's been long time.",
+      "I will be free in evening.",
+      "Yes I know that café.",
+      "Sure I will confirm you."
+    ]
+  },
+  {
+    to: "Rohan",
+    img_src: "https://www.gravatar.com/avatar/?d=mp&s=200",
+    to_message: [
+      "Hi Rohan, are you playing games tonight or busy?",
+      "We should play together after dinner.",
+      "Did you complete your work or still busy?",
+      "Let me know if you are free online.",
+      "It will be fun to play after long time."
+    ],
+    from_message: [
+      "Hi! Yes I am free tonight.",
+      "Yes we can play.",
+      "Almost done with work.",
+      "I will be online after 9.",
+      "Yes looking forward to it."
+    ]
+  },
+  {
+    to: "Sneha",
+    img_src: "https://www.gravatar.com/avatar/?d=mp&s=200",
+    to_message: [
+      "Hello Sneha, are you going shopping today or staying home?",
+      "We can go to mall together if you are free.",
+      "Have you visited new store in city?",
+      "Let me know your plan.",
+      "We can also watch movie."
+    ],
+    from_message: [
+      "Hello! I was planning to go out.",
+      "Yes let's go together.",
+      "No not yet.",
+      "I will get ready.",
+      "Yes movie also good."
+    ]
+  },
+  {
+    to: "Karan",
+    img_src: "https://www.gravatar.com/avatar/?d=mp&s=200",
+    to_message: [
+      "Hey Karan, did you complete today's office update?",
+      "Any meeting scheduled today?",
+      "How is project going?",
+      "Let me know if you need help.",
+      "We should discuss new task."
+    ],
+    from_message: [
+      "Hey! Yes done.",
+      "Yes at 3 PM meeting.",
+      "Project is fine.",
+      "I will let you know.",
+      "Yes we can discuss."
+    ]
+  },
+  {
+    to: "Anjali",
+    img_src: "https://www.gravatar.com/avatar/?d=mp&s=200",
+    to_message: [
+      "Hi Anjali, how is your exam preparation going?",
+      "Are you revising daily?",
+      "Feeling confident?",
+      "Need any help?",
+      "Take proper rest also."
+    ],
+    from_message: [
+      "Hi! Yes preparing well.",
+      "Yes revising daily.",
+      "A bit nervous.",
+      "Thank you I will ask.",
+      "Yes taking breaks."
+    ]
+  },
+  {
+    to: "Vikram",
+    img_src: "https://www.gravatar.com/avatar/?d=mp&s=200",
+    to_message: [
+      "Hey Vikram, gym today or rest day?",
+      "What time are you going?",
+      "Diet followed properly?",
+      "Joining evening session?",
+      "Stay consistent."
+    ],
+    from_message: [
+      "Hey! Yes gym today.",
+      "7 PM workout.",
+      "Yes diet fine.",
+      "Yes joining.",
+      "Agree 👍"
+    ]
+  },
+  {
+    to: "Pooja",
+    img_src: "https://www.gravatar.com/avatar/?d=mp&s=200",
+    to_message: [
+      "Hi Pooja, what are your plans today?",
+      "Are you going for shopping or staying home?",
+      "Shall we meet at mall?",
+      "We can also eat together.",
+      "Let me know."
+    ],
+    from_message: [
+      "Hi! I may go out.",
+      "Yes shopping plan.",
+      "Yes we can meet.",
+      "Okay sounds good.",
+      "I will tell you."
+    ]
+  },
+  {
+    to: "Suresh",
+    img_src: "https://www.gravatar.com/avatar/?d=mp&s=200",
+    to_message: [
+      "Hello Suresh, did you complete your task?",
+      "Any update on project?",
+      "Is everything fine?",
+      "Need any help?",
+      "Update me soon."
+    ],
+    from_message: [
+      "Hello! Yes done.",
+      "Project is fine.",
+      "Yes all good.",
+      "No help needed.",
+      "Will update."
+    ]
+  },
+  {
+    to: "Deepa",
+    img_src: "https://www.gravatar.com/avatar/?d=mp&s=200",
+    to_message: [
+      "Hi Deepa, are you free today?",
+      "Can we talk for some time?",
+      "Are you busy with work?",
+      "Let me know availability.",
+      "Call me when free."
+    ],
+    from_message: [
+      "Hi! Yes a bit free.",
+      "Yes we can talk.",
+      "Working but okay.",
+      "Evening free.",
+      "I will call."
+    ]
+  },
+  {
+    to: "Arjun",
+    img_src: "https://www.gravatar.com/avatar/?d=mp&s=200",
+    to_message: [
+      "Hey Arjun, project update?",
+      "Did you finish coding?",
+      "Any issues left?",
+      "When is delivery?",
+      "Keep me updated."
+    ],
+    from_message: [
+      "Hey! Yes done.",
+      "Yes coding finished.",
+      "Minor bugs left.",
+      "Tomorrow delivery.",
+      "Okay 👍"
+    ]
+  },
+  {
+    to: "Meena",
+    img_src: "https://www.gravatar.com/avatar/?d=mp&s=200",
+    to_message: [
+      "Hi Meena, dinner plan today?",
+      "Shall we go outside?",
+      "What time are you free?",
+      "Let me know place.",
+      "Waiting for reply."
+    ],
+    from_message: [
+      "Hi! Yes dinner plan.",
+      "Yes we can go.",
+      "Free after 8 PM.",
+      "Mall food court.",
+      "Okay see you."
+    ]
+  },
+  {
+    to: "Sahil",
+    img_src: "https://www.gravatar.com/avatar/?d=mp&s=200",
+    to_message: [
+      "Hey Sahil, travel plan ready?",
+      "When are you leaving?",
+      "Everything packed?",
+      "Need any help?",
+      "Let me know."
+    ],
+    from_message: [
+      "Hey! Yes ready.",
+      "Tomorrow morning.",
+      "Yes packed.",
+      "No thanks.",
+      "Okay 👍"
+    ]
+  },
+  {
+    to: "Divya",
+    img_src: "https://www.gravatar.com/avatar/?d=mp&s=200",
+    to_message: [
+      "Hi Divya, movie plan?",
+      "Which movie should we watch?",
+      "Are you free evening?",
+      "Shall we book tickets?",
+      "Confirm me."
+    ],
+    from_message: [
+      "Hi! Yes movie plan.",
+      "New release.",
+      "Yes free evening.",
+      "Yes book it.",
+      "Done 👍"
+    ]
+  },
+  {
+    to: "Nikhil",
+    img_src: "https://www.gravatar.com/avatar/?d=mp&s=200",
+    to_message: [
+      "Hey Nikhil, gaming tonight?",
+      "Which game we play?",
+      "Are you online?",
+      "Join fast.",
+      "Let’s play."
+    ],
+    from_message: [
+      "Hey! Yes gaming.",
+      "BGMI.",
+      "Yes online.",
+      "Coming.",
+      "Let’s go!"
+    ]
+  },
+  {
+    to: "Simran",
+    img_src: "https://www.gravatar.com/avatar/?d=mp&s=200",
+    to_message: [
+      "Hi Simran, are you free to talk?",
+      "How is your day?",
+      "Busy or free?",
+      "Shall we chat?",
+      "Reply me."
+    ],
+    from_message: [
+      "Hi! Yes free.",
+      "Day is good.",
+      "A little busy.",
+      "Yes talk.",
+      "Okay 👍"
+    ]
+  },
+  {
+    to: "Kabir",
+    img_src: "https://www.gravatar.com/avatar/?d=mp&s=200",
+    to_message: [
+      "Hey Kabir, work done?",
+      "Any update?",
+      "Project status?",
+      "Next step?",
+      "Tell me."
+    ],
+    from_message: [
+      "Hey! Yes done.",
+      "Updated.",
+      "All fine.",
+      "Next tomorrow.",
+      "Okay 👍"
+    ]
+  }
+];
+
+module.exports = data;

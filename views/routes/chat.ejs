@@ -1,0 +1,28 @@
+<%-layout("./layouts/boilerplate.ejs")%>
+<body>
+
+    
+    <% for(let chat of result){%>
+        <div class="content row">
+    <div class="user col-3">
+        <img src="<%=chat.img_src%>" alt="user image">
+
+ <span class="User_to"><%=chat.to%><a href="/chat/show/<%=chat._id%>">Start Chat..</a></span>
+ 
+<form action="http://localhost:8080/chat/delete/<%=chat._id%>?_method=delete" method="post">
+<button class="btn btn-success delete">Delete</button>
+</form>
+<br>
+  </div>
+    <div class="chat-content col-9 " >
+        <h3 class="username"> <i>@<%=chat.to%>...</i></h3> 
+    <% for(let i=0; i<chat.to_message.length; i++){ %>
+        <p class="to"><%=chat.to_message[i]%> &nbsp;&nbsp;&nbsp;<a class="edit" href="http://localhost:8080/chat/edit/<%=chat._id%>/<%=i%>">Edit..</a>&nbsp;&nbsp;&nbsp; <%=chat.createdAt.toString().split(" ")[4]%>
+        </p>
+        <p class="from"><%=chat.from_message[i]%></p>
+        <%}%>
+        </div> 
+       </div>
+    <% } %>
+
+</body>
